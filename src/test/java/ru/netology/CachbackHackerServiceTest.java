@@ -1,12 +1,9 @@
 package ru.netology;
 
-import org.testng.annotations.Test;
-
-import static org.testng.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class CachbackHackerServiceTest {
-
-    @org.testng.annotations.Test
+    @org.junit.Test
     public void testRemain() {
         CachbackHackerService service = new CachbackHackerService();
         int amount = 1000;
@@ -15,7 +12,7 @@ public class CachbackHackerServiceTest {
         assertEquals(actual, expected);
     }
 
-    @org.testng.annotations.Test
+    @org.junit.Test
     public void testRemainWithCashBack() {
         CachbackHackerService service = new CachbackHackerService();
         int amount = 900;
